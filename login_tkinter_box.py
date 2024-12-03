@@ -1,0 +1,17 @@
+from tkinter import*
+top=Tk()
+top.geometry("1700x1700")
+top.config(bg="yellow")
+top.title("LOGIN")
+l1 = Label(top, text="Username:", bg="yellow", font=("Arial", 14))
+l1.place(x=200,y=80)
+e1=Entry(top)
+e1.place(x=300,y=80)
+l2 = Label(top, text="Password:", bg="yellow", font=("Arial", 14))
+l2.place(x=200, y=150)
+e2 = Entry(top, font=("Arial", 14), show="*")
+e2.place(x=300, y=150)
+b1 = Button(top, text="Login", font=("Arial", 14), bg="blue", fg="white")
+b1.place(x=320,y=180)
+top.mainloop()
+
